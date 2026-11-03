@@ -31,22 +31,34 @@
     </div>
     <pre>
 #include &lt;stdio.h&gt;
-void main() {
-    int mat[2][2], i, j;
-    printf("Enter 4 numbers: ");
-    for(i=0;i&lt;2;i++){
-        for(j=0;j&lt;2;j++){
-            scanf("%d", &amp;mat[i][j]);
+
+
+int main() {
+    int matrix[2][2];
+    int i, j;
+
+    printf("Enter 4 numbers for a 2x2 matrix:\n");
+
+    // Taking input for the 2x2 matrix
+    for (i = 0; i < 2; i++) {
+        for (j = 0; j < 2; j++) {
+            printf("Enter element at [%d][%d]: ", i, j);
+            scanf("%d", &matrix[i][j]);
         }
     }
-    printf("Matrix:\n");
-    for(i=0;i&lt;2;i++){
-        for(j=0;j&lt;2;j++){
-            printf("%d\t", mat[i][j]);
+
+    // Printing the matrix layout
+    printf("\nThe 2x2 Matrix is:\n");
+    for (i = 0; i < 2; i++) {
+        for (j = 0; j < 2; j++) {
+            printf("%d\t", matrix[i][j]);
         }
-        printf("\n");
+        printf("\n"); 
     }
+
+    return 0;
 }
+
     </pre>
     <div class="output-panel">
      <div class="panel-label">
