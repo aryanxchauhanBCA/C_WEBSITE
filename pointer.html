@@ -1,1 +1,213 @@
+<html>
+ <head>
+  <title>
+   C CODE HUB
+  </title>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <link href="style.css" rel="stylesheet"/>
+ </head>
+ <body class="topic-page">
+  <header class="site-header">
+   <a class="home-link" href="index.html">
+    ← Home
+   </a>
+   <h1 class="page-title">
+    Basic input/output
+   </h1>
+  </header>
+  <main class="content">
+   <br/>
+   <br/>
+    <section class="question-card">
+    <div class="question-title">
+     <h2 class="question-heading">
+1. Write a C program to enter and print all elements of an array using a pointer.
+     </h2>
+    </div>
+    <div class="code-panel">
+     <div class="panel-label">
+      Code
+     </div>
+    </div>
+    <pre>
+#include &lt;stdio.h&gt;
+#include &lt;conio.h&gt;
+#include &lt;dos.h&gt;      
+void main()
+{ int arr[10], i, *ptr;
+ clrscr();
+for(i = 0; i <= 9; i++)
+    {
+        ptr = arr;
+        printf("Enter Value No %d: ", i + 1);
+        scanf("%d", ptr);
+        delay(200);
+    }
+    printf("\nValues in array are:\n");
+    for(i = 0; i <= 9; i++)
+    {
+        ptr = &arr[i];
 
+        printf("%d\n", *ptr);
+    }
+      delay(3000);
+}
+    </pre>
+    <div class="output-panel">
+     <div class="panel-label">
+      Output
+     </div>
+    </div>
+    <pre>
+Enter Value No 1: 2
+Enter Value No 2: 66
+Enter Value No 3: 4
+Enter Value No 4: 21
+Enter Value No 5: 4
+Enter Value No 6: 7
+Enter Value No 7: 6
+Enter Value No 8: 12
+Enter Value No 9: 90
+Enter Value No 10: 78
+
+Values in array are:
+2
+66
+4
+21
+4
+7
+6
+12
+90
+78  
+    </pre>
+   </section>
+
+
+      <section class="question-card">
+    <div class="question-title">
+     <h2 class="question-heading">
+2. Write a program to swap two numbers using pointers.
+     </h2>
+    </div>
+    <div class="code-panel">
+     <div class="panel-label">
+      Code
+     </div>
+    </div>
+    <pre>
+#include &lt;stdio.h&gt;
+#include &lt;conio.h&gt;
+#include &lt;dos.h&gt;      
+void swap(int *a, int *b) {
+    int temp = *a;
+    *a = *b;
+    *b = temp;
+}
+
+void main() {
+    int x = 30, y = 10;
+
+    clrscr();
+    printf("Before swapping: x = %d, y = %d\n", x, y);
+    swap(&x, &y);
+    printf("After swapping: x = %d, y = %d\n", x, y);
+
+    delay(3000);
+}
+    </pre>
+    <div class="output-panel">
+     <div class="panel-label">
+      Output
+     </div>
+    </div>
+    <pre>
+   Before swapping: x = 30, y = 10
+After swapping: x = 10, y = 30
+    </pre>
+   </section>
+
+
+
+
+      <section class="question-card">
+    <div class="question-title">
+     <h2 class="question-heading">
+3. A pointer should point the array and through pointer we will fill all the locations of the array by asking the value from the user and point the array.
+     </h2>
+    </div>
+    <div class="code-panel">
+     <div class="panel-label">
+      Code
+     </div>
+    </div>
+    <pre>
+#include &lt;stdio.h&gt;
+#include &lt;conio.h&gt;
+#include &lt;dos.h&gt;      
+void main()
+ {
+   int arr[10], i, *ptr;
+   clrscr();
+
+   for(i=0; i<=9; i++){
+    ptr=&arr[i];
+    printf("Enter %d value: ", i+1);
+    scanf("%d", ptr);
+   }
+
+  printf("\n\n Value in array are: \n");
+   for(i=0; i<=9; i++)
+   {
+      printf("%d \n", arr[i]);
+   }
+    delay(3000);
+}    </pre>
+    <div class="output-panel">
+     <div class="panel-label">
+      Output
+     </div>
+    </div>
+    <pre>
+   Enter 1 value: 23
+Enter 2 value: 12
+Enter 3 value: 54
+Enter 4 value: 67
+Enter 5 value: 76
+Enter 6 value: 45
+Enter 7 value: 90
+Enter 8 value: 56
+Enter 9 value: 37
+Enter 10 value: 49
+
+
+ Value in array are:
+23
+12
+54
+67
+76
+45
+90
+56
+37
+49
+          
+    </pre>
+   </section>
+
+
+
+
+
+
+
+
+
+
+
+
+    </main>
+ </body>
+</html>
