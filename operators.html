@@ -426,6 +426,61 @@ Enter Principal, Rate, Time: 2 3 4
 Simple Interest: 0.24
     </pre>
    </section>
+   <section class="question-card">
+    <div class="question-title">
+     <h2 class="question-heading">
+      13. Enter no. from user and check it is positive even , negative even, positive odd, negative odd or zero.
+     </h2>
+    </div>
+    <div class="code-panel">
+     <div class="panel-label">
+      Code
+     </div>
+    </div>
+    <pre>
+#include &lt;stdio.h&gt;
+#include &lt;conio.h&gt;
+#include &lt;dos.h&gt;
+void main()
+{
+    int num1;
+
+    clrscr();
+
+    printf("Enter any integer value: ");
+    scanf("%d", &num1);
+
+    num1 % 2 == 0 && num1 > 0 ?
+    printf("Even positive no.") : printf("");
+
+    num1 % 2 == 0 && num1 < 0 ?
+    printf("Even negative no.") : printf("");
+
+    num1 % 2 != 0 && num1 > 0 ?
+    printf("Odd positive no.") : printf("");
+
+    num1 % 2 != 0 && num1 < 0 ?
+    printf("Odd negative no.") : printf("");
+
+    num1 == 0 ?
+    printf("Zero is entered") : printf("");
+
+    
+    delay(3000);
+
+  }
+</pre>
+    <div class="output-panel">
+     <div class="panel-label">
+      Output
+     </div>
+    </div>
+    <pre>
+Enter any integer value: 5          
+Odd positive no.
+            
+    </pre>
+   </section>
   </main>
  </body>
 </html>
