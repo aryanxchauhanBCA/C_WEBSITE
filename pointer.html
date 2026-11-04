@@ -196,6 +196,72 @@ Enter 10 value: 49
           
     </pre>
    </section>
+
+    
+      <section class="question-card">
+    <div class="question-title">
+     <h2 class="question-heading">
+4. Write a program in which we are having 2D array of 2 by 3. Insert the value through pointer & print the values.
+     </h2>
+    </div>
+    <div class="code-panel">
+     <div class="panel-label">
+      Code
+     </div>
+    </div>
+    <pre>
+#include &lt;stdio.h&gt;
+#include &lt;conio.h&gt;
+#include &lt;dos.h&gt;    
+void main()
+{
+    int arr[2][3], *ptr, i, j;
+
+    ptr = arr[0];
+
+    for(i = 0; i <= 1; i++)
+    {
+        for(j = 0; j <= 2; j++)
+        {
+            printf("Enter the value: ");
+            scanf("%d", &arr[i][j]);
+        }
+    }
+
+    for(i = 0; i <= 1; i++)
+    {
+        for(j = 0; j <= 2; j++)
+        {
+            printf("%d\t", *ptr);
+            ptr++;
+        }
+
+        printf("\n");
+    }
+delay(2000);
+}
+
+    </pre>
+    <div class="output-panel">
+     <div class="panel-label">
+      Output
+     </div>
+    </div>
+    <pre>
+     Enter 6 no. for the 2x3 array =
+element [0][0]: 10
+element [0][1]: 20
+element [0][2]: 30
+element [1][0]: 40
+element [1][1]: 50
+element [1][2]: 60
+
+The 2x3 array is:
+10      20      30
+40      50      60     
+    </pre>
+   </section>
+
     </main>
  </body>
 </html>
