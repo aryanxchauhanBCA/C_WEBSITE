@@ -1,1 +1,224 @@
+<html>
+ <head>
+  <title>
+   C CODE HUB
+  </title>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <link href="style.css" rel="stylesheet"/>
+ </head>
+ <body class="topic-page">
+  <header class="site-header">
+   <a class="home-link" href="index.html">
+    ← Home
+   </a>
+   <h1 class="page-title">
+    NESTED LOOP
+   </h1>
+  </header>
+  <main class="content">
+   <br/>
+   <br/>
+<section class="question-card">
+    <div class="question-title">
+     <h2 class="question-heading">
+      1. Write a program print the pattern on the screen i.e. ?
+            11111
+            11111
+            11111
+     </h2>
+    </div>
+    <div class="code-panel">
+     <div class="panel-label">
+      Code
+     </div>
+    </div>
+    <pre>
+#include< stdio.h >
+#include< conio.h >
+#include< dos.h >
 
+void main()
+{
+    int i, j;
+
+    clrscr();
+
+    for(i = 1; i <= 3; i++)
+    {
+        for(j = 1; j <= 5; j++)
+        {
+            printf("1");
+        }
+
+        printf("\n");
+    }
+
+    delay(3000);
+}
+    </pre>
+    <div class="output-panel">
+     <div class="panel-label">
+      Output
+     </div>
+    </div>
+    <pre>
+11111
+11111
+11111
+    </pre>
+   </section>
+
+
+<section class="question-card">
+    <div class="question-title">
+     <h2 class="question-heading">
+      2. Write a program to print a right-angle triangle using stars.
+     </h2>
+    </div>
+    <div class="code-panel">
+     <div class="panel-label">
+      Code
+     </div>
+    </div>
+    <pre>
+#include&ld;stdio.h&gd;
+#include&ld;conio.h&gd;
+#include&ld;dos.h&gd;
+
+void main()
+{
+    int i, j;
+
+    clrscr();
+
+    for(i = 1; i <= 4; i++)
+    {
+        for(j = 1; j <= i; j++)
+        {
+            printf("* ");
+        }
+
+        printf("\n");
+    }
+
+    delay(3000);
+}
+    </pre>
+    <div class="output-panel">
+     <div class="panel-label">
+      Output
+     </div>
+    </div>
+    <pre>
+*
+* *
+* * *
+* * * *
+    </pre>
+   </section>
+
+          
+<section class="question-card">
+    <div class="question-title">
+     <h2 class="question-heading">
+      3. Write a program to print a pyramid using stars.
+     </h2>
+    </div>
+    <div class="code-panel">
+     <div class="panel-label">
+      Code
+     </div>
+    </div>
+    <pre>
+#include&ld;stdio.h&gd;
+#include&ld;conio.h&gd;
+#include&ld;dos.h&gd;
+
+void main()
+{
+    int i, j, str;
+
+    for(i = 1; i <= 4; i++)
+    {
+        for(j = 1; j <= 4-i; j++)
+        {
+            printf(" ");
+        }
+
+        for(str = 1; str <= 2*i-1; str++)
+        {
+            printf("*");
+        }
+
+        printf("\n");
+    }
+
+    return 0;
+}
+    </pre>
+    <div class="output-panel">
+     <div class="panel-label">
+      Output
+     </div>
+    </div>
+    <pre>
+    *
+   ***
+  *****
+ *******
+    </pre>
+   </section>
+
+          
+<section class="question-card">
+    <div class="question-title">
+     <h2 class="question-heading">
+      4. Write a program to print a inverted pyramid using stars.
+     </h2>
+    </div>
+    <div class="code-panel">
+     <div class="panel-label">
+      Code
+     </div>
+    </div>
+    <pre>
+#include&ld;stdio.h&gd;
+#include&ld;conio.h&gd;
+#include&ld;dos.h&gd;
+
+void main()
+{
+    int i, j, str;
+
+    for(i = 4; i >= 1; i--)
+    {
+        for(j = 1; j <= 4-i; j++)
+        {
+            printf(" ");
+        }
+
+        for(str = 1; str <= 2*i-1; str++)
+        {
+            printf("*");
+        }
+
+        printf("\n");
+    }
+delay(1000);
+}
+    </pre>
+    <div class="output-panel">
+     <div class="panel-label">
+      Output
+     </div>
+    </div>
+    <pre>
+      *******
+       *****
+        ***
+         *
+    </pre>
+   </section>
+        </main>
+        </body>
+        </html>
