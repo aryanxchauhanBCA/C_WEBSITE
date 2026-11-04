@@ -1,0 +1,156 @@
+<html>
+ <head>
+  <title>
+   C CODE HUB
+  </title>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <link href="style.css" rel="stylesheet"/>
+ </head>
+ <body class="topic-page">
+  <header class="site-header">
+   <a class="home-link" href="index.html">
+    ← Home
+   </a>
+   <h1 class="page-title">
+    RECURSION 
+   </h1>
+  </header>
+  <main class="content">
+   <br/>
+   <br/>
+
+<section class="question-card">
+    <div class="question-title">
+     <h2 class="question-heading">
+      1. Write a program of recursion and display the output.
+     </h2>
+    </div>
+    <div class="code-panel">
+     <div class="panel-label">
+      Code
+     </div>
+    </div>
+    <pre>
+#include &lt;stdio.h&gt;
+
+int x = 1;
+
+void fun()
+{
+    if(x == 5)
+    {
+        printf("%d", x);
+        x++;
+        fun();
+    }
+
+    printf("A");
+}
+
+int main()
+{
+    fun();
+
+}
+
+    </pre>
+    <div class="output-panel">
+     <div class="panel-label">
+      Output
+     </div>
+    </div>
+    <pre>
+5AAAAA
+    </pre>
+    <!--2nd-->
+   </section>
+
+    <section class="question-card">
+    <div class="question-title">
+     <h2 class="question-heading">
+      2. Write a program of recursion with global variable and display the output.
+     </h2>
+    </div>
+    <div class="code-panel">
+     <div class="panel-label">
+      Code
+     </div>
+    </div>
+    <pre>
+#include &lt;stdio.h&gt;
+
+int x = 1;
+
+void fun()
+{
+    if(x == 5)
+    {
+        printf("%d", x);
+        x++;
+        fun();
+    }
+}
+
+void main()
+{
+    fun();
+
+    delay(3000);
+}
+
+    </pre>
+    <div class="output-panel">
+     <div class="panel-label">
+      Output
+     </div>
+    </div>
+    <pre>
+    5
+    </pre>
+    <!--2nd-->
+   </section>
+
+    <section class="question-card">
+    <div class="question-title">
+     <h2 class="question-heading">
+      3. Write a program of recursion with local variable and display the output.
+     </h2>
+    </div>
+    <div class="code-panel">
+     <div class="panel-label">
+      Code
+     </div>
+    </div>
+    <pre>
+#include&ld;stdio.h&gd;
+#include&ld;conio.h&gd;
+#include&ld;dos.h&gd;
+void fun(int x)
+{
+if(x==5)
+{
+x++;
+fun(x);
+printf("%d",x);
+}
+}
+void main()
+{
+clrscr();
+fun();
+delay(3000);
+}
+    </pre>
+    <div class="output-panel">
+     <div class="panel-label">
+      Output
+     </div>
+    </div>
+    <pre>
+65432
+    </pre>
+    <!--2nd-->
+   </section>
+  </main>
+ </body>
+</html>
