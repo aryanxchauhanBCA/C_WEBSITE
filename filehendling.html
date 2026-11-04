@@ -349,6 +349,152 @@ This is File Handling
 
 Total Number Of Words In File = 5       </pre>
    </section>
+
+	<section class="question-card">
+    <div class="question-title">
+     <h2 class="question-heading">
+      4. Enter the filename from the user and enter the data from the user and put in the file.
+     </h2>
+    </div>
+    <div class="code-panel">
+     <div class="panel-label">
+      Code
+     </div>
+    </div>
+    <pre>
+
+#include< stdio.h >
+#include< conio.h >
+#include< dos.h >
+void main()
+{
+FILE *f;
+char fname[20], data[20];
+clrscr();
+printf("Enter filename:");
+scanf("%s",fname);
+
+f=fopen("fname","w");
+printf("Enter data:");
+scanf("%s",data);
+fprintf(f,"%s",data);
+printf("Data stored successfully");
+fclose(f);
+delay(3000);
+}
+    </pre>
+    <div class="output-panel">
+     <div class="panel-label">
+      Output
+     </div>
+    </div>
+    <pre>
+Enter filename:qwe
+Enter data:aryan
+    </pre>
+    <!--2nd-->
+   </section>
+
+	<section class="question-card">
+    <div class="question-title">
+     <h2 class="question-heading">
+      5. Enter the filename from the user and enter the data from the user and put in the file but data should be in capital letter.
+     </h2>
+    </div>
+    <div class="code-panel">
+     <div class="panel-label">
+      Code
+     </div>
+    </div>
+    <pre>
+#include< stdio.h >
+#include< conio.h >
+#include< dos.h >
+void main()
+{
+FILE *f;
+char fname[20], data[20];
+int i;
+clrscr();
+printf("Enter filename:");
+scanf("%s",fname);
+
+f=fopen("fname","w");
+printf("Enter data:");
+scanf("%s",data);
+
+for(i=0; data[i]!='\0'; i++)
+{
+if(data[i]>=97 && data[i]<=122)
+{
+data[i]=data[i]-32;
+}
+}
+fprintf(f,"%s",data);
+printf("Data stored successfully");
+fclose(f);
+delay(3000);
+}
+	</pre>
+    <div class="output-panel">
+     <div class="panel-label">
+      Output
+     </div>
+    </div>
+    <pre>
+Enter filename:abc;
+Enter data:hello;
+Data stored successfully
+    </pre>
+    <!--2nd-->
+   </section>
+	<section class="question-card">
+    <div class="question-title">
+     <h2 class="question-heading">
+      6. Enter the filename from the user and enter the data from the user till the user want to enter the data.
+     </h2>
+    </div>
+    <div class="code-panel">
+     <div class="panel-label">
+      Code
+     </div>
+    </div>
+    <pre>
+		#include< stdio.h >
+#include< conio.h >
+#include< dos.h >
+void main()
+{
+FILE *f;
+char fname[20], data[20], ch;
+clrscr();
+printf("Enter filename:");
+scanf("%s",fname);
+
+f=fopen("fname","w");
+do{
+printf("Enter data:");
+scanf("%s",data);
+fprintf(f,"%s",data);
+printf("Do u want to enter more y/n:");
+scanf("%c",&ch);
+}while(ch=='y' || ch=='Y');
+fclose(f);
+delay(3000);
+}
+</pre>
+    <div class="output-panel">
+     <div class="panel-label">
+      Output
+     </div>
+    </div>
+    <pre>
+		Enter filename:abc;
+Enter data:hello;
+Data stored successfully
+	</pre>
+    <!--2nd-->
+   </section>
   </main>
  </body>
 </html>
